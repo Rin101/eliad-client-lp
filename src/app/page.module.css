@@ -1,0 +1,112 @@
+
+.topSection {
+    position: relative;
+    width: 100%;
+}
+
+.topSectionSm {
+    display: none;
+    border: none !important;
+    height: 350px;
+}
+
+.bgImg {
+    position: absolute;
+    object-fit: cover;
+    object-position: top;
+    opacity: 0.22;
+    width: 100%;
+    height: 100%;
+}
+
+.topContent {
+    position: absolute;
+    width: 100%;
+}
+
+.topText {
+    line-height: 160%;
+}
+
+@media screen and (max-width: 816px) {
+    .topText {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .topText {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 526px) {
+    .topText {
+        font-size: 20px;
+    }
+
+    .topImage {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .topText {
+        font-size: 20px;
+    }
+
+    .topImage {
+        display: none;
+    }
+
+    .topSectionSm {
+        display: block;
+    }
+
+    .topSectionLg {
+        display: none;
+    }
+}
+
+.mainGreen {
+    color: #36C233;
+}
+
+.contactButton {
+    cursor: pointer;
+    background: linear-gradient(to right, #36C233, #0D940A);
+    box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.13);
+}
+
+/* ================================= */
+.points > section {
+    display: flex;
+    margin: 130px 0;
+}
+
+.pointSpacer {
+    width: 40px;
+}
+
+.heading {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.context {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+@media screen and (max-width: 526px) {
+
+    .pointSpacer {
+        display: none;
+    }
+
+    .points section img {
+        display: none;
+    }
+}
