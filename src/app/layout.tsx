@@ -1,10 +1,13 @@
 import './globals.css'
 import type { Metadata } from 'next'
+import { Noto_Sans_JP } from 'next/font/google'
 
 export const metadata: Metadata = {
   title: 'エリアド',
   description: 'エリアドとは',
 }
+
+const notoSansJP = Noto_Sans_JP({ subsets: [], display: 'swap', weight: "500" })
 
 export default function RootLayout({
   children,
@@ -13,7 +16,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja">
-      <body>{children}</body>
+      <body>
+      {/* <body className={notoSansJP.className}> */}
+        {children}
+      </body>
     </html>
   )
 }
