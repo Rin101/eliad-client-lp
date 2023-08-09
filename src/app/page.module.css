@@ -28,6 +28,15 @@
     line-height: 160%;
 }
 
+.nameContainer {
+    /* display: flex; */
+    /* align-items: center; */
+}
+
+.subName {
+    /* margin-left: 15px; */
+}
+
 @media screen and (max-width: 816px) {
     .topText {
         font-size: 25px;
@@ -94,10 +103,16 @@
     margin-bottom: 30px;
 }
 
+.subHeading {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
 .context {
     font-weight: 500;
     font-size: 15px;
     line-height: 25px;
+    margin-bottom: 20px;
 }
 
 @media screen and (max-width: 526px) {

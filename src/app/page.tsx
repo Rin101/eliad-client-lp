@@ -19,7 +19,10 @@ export default function Home() {
         <div className={`${styles.topContent} px-6 sm:px-12 pb-6 flex justify-between my-7 items-center lg:justify-center`}>
           <div>
             <h1 className={`font-extrabold text-[30px] ${styles.topText}`}>転職市場でリーチしにくい<br/>優秀人材をスカウトできる<br/>キャリアQAサイト</h1>
-            <h1 className={`font-extrabold text-[30px] sm:text-[40px] ${styles.mainGreen} my-8`}>エリアド</h1>
+            <div className={`${styles.nameContainer} my-8`}>
+              <h1 className={`font-extrabold text-[30px] sm:text-[40px] mb-2 ${styles.mainGreen}`}>エリアド</h1>
+              <p className={`${styles.subName} font-medium text-[13px] ${styles.mainGreen}`}>ー エリートアドバイス ー</p>
+            </div>
             <div className={`px-7 sm:px-10 py-3 rounded-sm ${styles.contactButton} w-fit`}>
               <p className={`font-bold text-sm sm:text-normal text-white`}>問い合わせる</p>
             </div>
@@ -32,7 +35,10 @@ export default function Home() {
       <section className={`${styles.topSection} ${styles.topSectionLg} px-6 sm:px-12 pb-6 flex justify-between my-7 items-center lg:justify-center`}>
         <div>
           <h1 className={`font-extrabold text-[30px] ${styles.topText}`}>転職市場でリーチしにくい<br/>優秀人材をスカウトできる<br/>キャリアQAサイト</h1>
-          <h1 className={`font-extrabold text-[30px] sm:text-[40px] ${styles.mainGreen} my-8`}>エリアド</h1>
+          <div className={`${styles.nameContainer} my-8`}>
+              <h1 className={`font-extrabold text-[30px] sm:text-[40px] mb-2 ${styles.mainGreen}`}>エリアド</h1>
+              <p className={`${styles.subName} font-medium text-[13px] sm:text-[15px] ${styles.mainGreen}`}>ー エリートアドバイス ー</p>
+            </div>
           <div className={`px-7 sm:px-10 py-3 rounded-sm ${styles.contactButton} w-fit`}>
             <p className={`font-bold text-sm sm:text-normal text-white`}>問い合わせる</p>
           </div>
@@ -48,7 +54,7 @@ export default function Home() {
           <div className={`${styles.textBox}`}>
             <h2 className={styles.heading}>はじめに</h2>
             <p className={styles.context}>
-              エリアド（エリートアドバイス）は、仕事に悩めるすべての人にカジュアルに相談に乗りアドバイスするサービスです。<br/>
+              エリアドは、仕事に悩めるすべての人にカジュアルに相談に乗りアドバイスするサービスです。<br/>
               この資料では、具体的なイメージを持っていただくためにどのような事例をもってご活用いただくか、本プロダクト思想や事例、活用の仕方を紹介します。
             </p>
           </div>
@@ -71,13 +77,15 @@ export default function Home() {
         <section>
           <div className={styles.textBox}>
             <h2 className={styles.heading}>なぜQA型の相談プラットフォーム？</h2>
-            <h3 className={styles.subHeading}>フレンドシップ型の採用</h3>
+            <h3 className={styles.subHeading}>- フレンドシップ型の採用 -</h3>
             <p className={styles.context}>
               転職を全く検討していなかった人が、社外の人との出会いがきっかけで転職を決意するケースがあったり、
               転職サービスを使わずに転職が完結する人も増えています。
             </p>
             <p className={styles.context}>
-              そのため、転職意欲が顕在化する前からの接点・認知づくりの重要性が高まっています。<br/>
+              そのため、転職意欲が顕在化する前からの接点・認知づくりの重要性が高まっています。
+            </p>
+            <p className={styles.context}>
               上記の観点から、「仕事の悩み相談に乗ってほしい」というニーズに当てはめ、QAサービスの展開をしております。<br/>
               また、有効な回答を得られることで、周りの友人、知人の紹介といったケースも発生し、１つの回答で複数のメリットを獲得できることも魅力の一つだと考えています。
             </p>
